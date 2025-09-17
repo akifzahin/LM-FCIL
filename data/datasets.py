@@ -35,7 +35,7 @@ class PhaseDataset:
         """Extract unique writer IDs from the phase indices"""
         writers = set()
         for idx in self.phase_indices:
-            # Get original writer ID through parent dataset
+            ## Get original writer ID through parent dataset
             parent_idx = self.parent_dataset.indices[idx]
             if hasattr(self.parent_dataset.dataset, 'samples'):
                 _, original_label = self.parent_dataset.dataset.samples[parent_idx]
