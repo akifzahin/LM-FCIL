@@ -1,6 +1,6 @@
 import torch
 
-# Federated Learning Configuration
+## Federated Learning Configuration
 FL_CONFIG = {
     "device": torch.device("cuda" if torch.cuda.is_available() else "cpu"),
     "num_clients": 4,
